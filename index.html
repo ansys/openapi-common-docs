@@ -8,6 +8,7 @@
 
     <title>Common Authentication Components Documentation &#8212; ansys.openapi.common 0.1.0.dev0 documentation</title>
     
+    
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
@@ -29,6 +30,7 @@
     
   <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
+    
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -37,7 +39,7 @@
     <script src="_static/copybutton.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="API Reference" href="api/api.html" />
+    <link rel="next" title="API Reference" href="api/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -49,6 +51,7 @@
     
     <div class="container-fluid" id="banner"></div>
 
+    
     
     <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
     .navbar-light {
@@ -83,7 +86,7 @@
       <div class="navbar-center-item">
         <ul id="navbar-main-elements" class="navbar-nav">
     <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="api/api.html">
+ <a class="reference internal nav-link" href="api/index.html">
   API Reference
  </a>
 </li>
@@ -118,6 +121,8 @@
 </div>
     </nav>
     
+    
+
 
     <div class="container-xl">
       <div class="row">
@@ -240,7 +245,7 @@ HTTP APIs, minimizing overhead and reducing code duplication.</p>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
 <p>A widely used standard for HTTP REST-style APIs is the OpenAPI standard,
-formerly known as Swagger. The Open API Common library is designed to be
+formerly known as Swagger. The OpenAPI Common library is designed to be
 used alongside code generation tools to produce client libraries for HTTP
 APIs.</p>
 </section>
@@ -330,7 +335,7 @@ Currently we support only the Authorization Code authentication flow.</p>
 <p>You can set all options that are available in Python library <em>requests</em> through
 the client. This enables you to configure custom SSL certificate validation, send
 client certificates if your API server requires them, and configure many other options.</p>
-<p>For example to send a client certificate with every request:</p>
+<p>For example, to send a client certificate with every request:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.openapi.common</span> <span class="kn">import</span> <span class="n">SessionConfiguration</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">configuration</span> <span class="o">=</span> <span class="n">SessionConfiguration</span><span class="p">(</span>
 <span class="gp">... </span>   <span class="n">client_cert_path</span><span class="o">=</span><span class="s1">&#39;./my-client-cert.pem&#39;</span><span class="p">,</span>
@@ -350,25 +355,25 @@ your platform by making a pull request.</p>
 <p>Ubuntu requires the Python module <code class="docutils literal notranslate"><span class="pre">gssapi</span></code> to be built from source. This requires the
 Kerberos headers, Python headers for the version of Python that you are using, and a
 supported compiler. (GCC works well.)</p>
-<p>You should then be able to install this module with the <code class="docutils literal notranslate"><span class="pre">[linux-kerberos]</span></code> extra.</p>
+<p>You should then be able to install this module with the <code class="docutils literal notranslate"><span class="pre">[linux-kerberos]</span></code> extra:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt install build-essentials python3.8-dev libkrb5-dev
 pip install ansys-openapi-common<span class="o">[</span>linux-kerberos<span class="o">]</span>
 </pre></div>
 </div>
 <p>Once the installation completes, ensure that your <code class="docutils literal notranslate"><span class="pre">krb5.conf</span></code> file is set up correctly
-for your Kerberos configuration and that you have a valid <code class="docutils literal notranslate"><span class="pre">keytab</span> <span class="pre">file`,</span> <span class="pre">which</span> <span class="pre">is</span>
-<span class="pre">normally</span> <span class="pre">in</span> <span class="pre">``/etc/krb5.keytab</span></code>.</p>
+for your Kerberos configuration and that you have a valid <code class="docutils literal notranslate"><span class="pre">keytab</span> <span class="pre">file</span></code>, which is
+normally in <code class="docutils literal notranslate"><span class="pre">/etc/krb5.keytab</span></code>.</p>
 </section>
 </section>
 </section>
 <section id="api-reference">
 <h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
-<p>For comprehensive API documentation, see <a class="reference internal" href="api/api.html"><span class="doc">API reference</span></a>.</p>
+<p>For comprehensive API documentation, see <a class="reference internal" href="api/index.html"><span class="doc">API reference</span></a>.</p>
 </section>
 <section id="contributing">
 <h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
-<p>Contributions to this library are welcomed. For more information, see the
-<a class="reference internal" href="contributing.html"><span class="doc">Contributor Guide</span></a>.</p>
+<p>We welcome contributions to this library. For more information, see the
+<a class="reference internal" href="contributing.html"><span class="doc">Contributing</span></a>.</p>
 </section>
 <section id="project-index">
 <h2>Project Index<a class="headerlink" href="#project-index" title="Permalink to this headline">¶</a></h2>
