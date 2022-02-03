@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>request &#8212; ansys.openapi.common 0.1.0.dev0 documentation</title>
+    <title>request &#8212; ansys.openapi.common 1.0.0b0 documentation</title>
     
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
@@ -290,7 +290,7 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="ansys.openapi.common.ApiClient.request">
 <span class="sig-prename descclassname"><span class="pre">ApiClient.</span></span><span class="sig-name descname"><span class="pre">request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.openapi.common.ApiClient.request" title="Permalink to this definition">¶</a></dt>
-<dd><p>Makes the HTTP request and returns it directly.</p>
+<dd><p>Make the HTTP request and return it directly.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl>
@@ -302,13 +302,13 @@
 </dd>
 <dt><strong>headers</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dict</span></code></span></dt><dd><p>Headers to attach to the request.</p>
 </dd>
-<dt><strong>post_params</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">Tuple</span></code>]</span></dt><dd><p>Request post form parameters for <code class="docutils literal notranslate"><span class="pre">application/x-www-form-urlencoded</span></code> and <code class="docutils literal notranslate"><span class="pre">multipart/form-data</span></code>.</p>
+<dt><strong>post_params</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">Tuple</span></code>]</span></dt><dd><p>Request post form parameters for <code class="docutils literal notranslate"><span class="pre">multipart/form-data</span></code>.</p>
 </dd>
 <dt><strong>body</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SerializedType</span></code></span></dt><dd><p>Request body.</p>
 </dd>
 <dt><strong>_preload_content</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Whether to return the underlying response without reading or decoding response data. The default
-is <code class="docutils literal notranslate"><span class="pre">True</span></code>, in which case the reading or decoding data is read.  If <code class="docutils literal notranslate"><span class="pre">False</span></code>, recording or response
-data is not read.</p>
+is <code class="docutils literal notranslate"><span class="pre">True</span></code>, in which case the response data is read or decoded.  If <code class="docutils literal notranslate"><span class="pre">False</span></code>, the response
+data is not read or decoded.</p>
 </dd>
 <dt><strong>_request_timeout</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/dev/library/functions.html#float" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">Tuple</span></code>[<a class="reference external" href="https://docs.python.org/dev/library/functions.html#float" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>]]</span></dt><dd><p>Timeout setting for the request. If only one number is provided, it is used as a total request timeout.
 It can also be a pair (tuple) of (connection, read) timeouts. This parameter overrides the session-level

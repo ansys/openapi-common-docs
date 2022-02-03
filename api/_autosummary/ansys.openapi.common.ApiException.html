@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>ApiException &#8212; ansys.openapi.common 0.1.0.dev0 documentation</title>
+    <title>ApiException &#8212; ansys.openapi.common 1.0.0b0 documentation</title>
     
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
@@ -228,18 +228,18 @@
 <dl class="py exception">
 <dt class="sig sig-object py" id="ansys.openapi.common.ApiException">
 <em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ApiException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status_code</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason_phrase</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.openapi.common.ApiException" title="Permalink to this definition">¶</a></dt>
-<dd><p>Exception raised when the remote server returns an unsuccessful response. For more information about
-the failure, inspect <code class="docutils literal notranslate"><span class="pre">.status_code</span></code> and <code class="docutils literal notranslate"><span class="pre">.reason_phrase</span></code>.</p>
+<dd><p>Provides the exception to raise when the remote server returns an unsuccessful response. For more information
+about the failure, inspect <code class="docutils literal notranslate"><span class="pre">.status_code</span></code> and <code class="docutils literal notranslate"><span class="pre">.reason_phrase</span></code>.</p>
 <dl class="field-list">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><dl>
 <dt><strong>status_code</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a></span></dt><dd><p>HTTP status code associated with the response.</p>
 </dd>
-<dt><strong>reason_phrase</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>Description of the response as provided by the server.</p>
+<dt><strong>reason_phrase</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>Description of the response provided by the server.</p>
 </dd>
-<dt><strong>body</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Content of the response as provided by the server. The default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<dt><strong>body</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Content of the response provided by the server. The default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 </dd>
-<dt><strong>headers</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CaseInsensitiveDict</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Response headers as provided by the server. The defeault is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<dt><strong>headers</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CaseInsensitiveDict</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Response headers provided by the server. The defeault is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 </dd>
 </dl>
 </dd>

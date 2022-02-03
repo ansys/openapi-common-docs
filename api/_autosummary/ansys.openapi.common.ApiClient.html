@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>ApiClient &#8212; ansys.openapi.common 0.1.0.dev0 documentation</title>
+    <title>ApiClient &#8212; ansys.openapi.common 1.0.0b0 documentation</title>
     
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
@@ -315,9 +315,9 @@ public API exposed by the client.</p>
 </pre></div>
 </div>
 <p>For testing purposes, it is common to configure an API with a self-signed certificate. By default, the
-<a class="reference internal" href="#ansys.openapi.common.ApiClient" title="ansys.openapi.common.ApiClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApiClient</span></code></a> will not trust self-signed SSL certificates. To allow this, pass a path to the root
-certificate to the <a class="reference internal" href="ansys.openapi.common.SessionConfiguration.html#ansys.openapi.common.SessionConfiguration" title="ansys.openapi.common.SessionConfiguration"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionConfiguration</span></code></a> object. For more configuration examples, see the
-<a class="reference internal" href="ansys.openapi.common.SessionConfiguration.html#ansys.openapi.common.SessionConfiguration" title="ansys.openapi.common.SessionConfiguration"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionConfiguration</span></code></a> documentation.</p>
+<a class="reference internal" href="#ansys.openapi.common.ApiClient" title="ansys.openapi.common.ApiClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApiClient</span></code></a> class will not trust self-signed SSL certificates. To allow this, pass a path to the
+root certificate to the <a class="reference internal" href="ansys.openapi.common.SessionConfiguration.html#ansys.openapi.common.SessionConfiguration" title="ansys.openapi.common.SessionConfiguration"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionConfiguration</span></code></a> object. For more configuration examples, see
+<a class="reference internal" href="ansys.openapi.common.SessionConfiguration.html#ansys.openapi.common.SessionConfiguration" title="ansys.openapi.common.SessionConfiguration"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionConfiguration</span></code></a>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">session_config</span> <span class="o">=</span> <span class="n">SessionConfiguration</span><span class="p">(</span><span class="n">cert_store_path</span><span class="o">=</span><span class="s1">&#39;./self-signed-cert.pem&#39;</span><span class="p">)</span>
 <span class="gp">... </span><span class="n">ssl_client</span> <span class="o">=</span> <span class="n">ApiClient</span><span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">(),</span>
 <span class="gp">... </span>                   <span class="s1">&#39;https://secure-api/API/v1.svc&#39;</span><span class="p">,</span>
@@ -334,34 +334,34 @@ certificate to the <a class="reference internal" href="ansys.openapi.common.Sess
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="ansys.openapi.common.ApiClient.call_api.html#ansys.openapi.common.ApiClient.call_api" title="ansys.openapi.common.ApiClient.call_api"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApiClient.call_api</span></code></a>(resource_path, method[, ...])</p></td>
-<td><p>Makes the HTTP request and returns deserialized data.</p></td>
+<td><p>Make the HTTP request and return the deserialized data.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="ansys.openapi.common.ApiClient.deserialize.html#ansys.openapi.common.ApiClient.deserialize" title="ansys.openapi.common.ApiClient.deserialize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApiClient.deserialize</span></code></a>(response, response_type)</p></td>
-<td><p>Deserializes the response into an object.</p></td>
+<td><p>Deserialize the response into an object.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="ansys.openapi.common.ApiClient.parameters_to_tuples.html#ansys.openapi.common.ApiClient.parameters_to_tuples" title="ansys.openapi.common.ApiClient.parameters_to_tuples"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApiClient.parameters_to_tuples</span></code></a>(params, ...)</p></td>
-<td><p>Gets parameters as a list of tuples, formatting collections.</p></td>
+<td><p>Get parameters as a list of tuples, formatting collections.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="ansys.openapi.common.ApiClient.prepare_post_parameters.html#ansys.openapi.common.ApiClient.prepare_post_parameters" title="ansys.openapi.common.ApiClient.prepare_post_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApiClient.prepare_post_parameters</span></code></a>([...])</p></td>
-<td><p>Builds form parameters.</p></td>
+<td><p>Build form parameters.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="ansys.openapi.common.ApiClient.request.html#ansys.openapi.common.ApiClient.request" title="ansys.openapi.common.ApiClient.request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApiClient.request</span></code></a>(method, url[, ...])</p></td>
-<td><p>Makes the HTTP request and returns it directly.</p></td>
+<td><p>Make the HTTP request and return it directly.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="ansys.openapi.common.ApiClient.sanitize_for_serialization.html#ansys.openapi.common.ApiClient.sanitize_for_serialization" title="ansys.openapi.common.ApiClient.sanitize_for_serialization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApiClient.sanitize_for_serialization</span></code></a>(obj)</p></td>
-<td><p>Builds a JSON POST object.</p></td>
+<td><p>Build a JSON POST object.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="ansys.openapi.common.ApiClient.select_header_accept.html#ansys.openapi.common.ApiClient.select_header_accept" title="ansys.openapi.common.ApiClient.select_header_accept"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApiClient.select_header_accept</span></code></a>(accepts)</p></td>
-<td><p>Returns a correctly formatted <code class="docutils literal notranslate"><span class="pre">Accept</span></code> header value from the provided array of accepted content types.</p></td>
+<td><p>Return a correctly formatted <code class="docutils literal notranslate"><span class="pre">Accept</span></code> header value from the provided array of accepted content types.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="ansys.openapi.common.ApiClient.select_header_content_type.html#ansys.openapi.common.ApiClient.select_header_content_type" title="ansys.openapi.common.ApiClient.select_header_content_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApiClient.select_header_content_type</span></code></a>(...)</p></td>
-<td><p>Returns the preferred <code class="docutils literal notranslate"><span class="pre">Content-Type</span></code> header value from the provided array of valid content types.</p></td>
+<td><p>Return the preferred <code class="docutils literal notranslate"><span class="pre">Content-Type</span></code> header value from the provided array of valid content types.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="ansys.openapi.common.ApiClient.set_default_header.html#ansys.openapi.common.ApiClient.set_default_header" title="ansys.openapi.common.ApiClient.set_default_header"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApiClient.set_default_header</span></code></a>(header_name, ...)</p></td>
-<td><p>Sets a default value for a header on all requests.</p></td>
+<td><p>Set a default value for a header on all requests.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="ansys.openapi.common.ApiClient.setup_client.html#ansys.openapi.common.ApiClient.setup_client" title="ansys.openapi.common.ApiClient.setup_client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApiClient.setup_client</span></code></a>(models)</p></td>
-<td><p>Sets up the client for use and registers models for serialization and deserialization.</p></td>
+<td><p>Set up the client for use and register models for serialization and deserialization.</p></td>
 </tr>
 </tbody>
 </table>
