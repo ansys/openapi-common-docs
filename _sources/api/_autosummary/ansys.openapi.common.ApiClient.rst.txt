@@ -39,9 +39,6 @@
       ApiClient.select_header_content_type
       
       
-      ApiClient.set_default_header
-      
-      
       ApiClient.setup_client
       
    
@@ -55,9 +52,6 @@
       :toctree:
    
       
-      
-      
-      ApiClient.user_agent
       
    
    

@@ -1,6 +1,0 @@
-user\_agent
-===========
-
-.. currentmodule:: ansys.openapi.common
-
-.. autoproperty:: ApiClient.user_agent

@@ -1,6 +1,0 @@
-set\_default\_header
-====================
-
-.. currentmodule:: ansys.openapi.common
-
-.. automethod:: ApiClient.set_default_header
