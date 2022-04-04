@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>deserialize &#8212; OpenAPI Common 1.0.0</title>
+    <title>deserialize &#8212; OpenAPI Common 1.1.0</title>
     
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
@@ -139,7 +139,7 @@
         <li class="nav-item nav-item-additional-breadcrumb"><a href="https://shared.docs.pyansys.com">Shared Components</a> » </li>
     
     
-        <li class="nav-item nav-item-0"><a href="../../index.html">OpenAPI Common 1.0.0</a> » </li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">OpenAPI Common 1.1.0</a> » </li>
     
 
           <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> » </li>
@@ -313,7 +313,7 @@
 <p>For responses that are in JSON format, this method processes the response and returns it:</p>
 <ul class="simple">
 <li><p>If <code class="docutils literal notranslate"><span class="pre">response_type</span></code> is <code class="docutils literal notranslate"><span class="pre">file</span></code>, save the content to a temporary file and return the file name.</p></li>
-<li><p>If <code class="docutils literal notranslate"><span class="pre">response_type</span></code> is <code class="docutils literal notranslate"><span class="pre">datetime.date</span></code> or <code class="docutils literal notranslate"><span class="pre">datetime.datetime</span></code>, parse the string and return the
+<li><p>If <code class="docutils literal notranslate"><span class="pre">response_type</span></code> is <a class="reference external" href="https://docs.python.org/dev/library/datetime.html#datetime.datetime" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.datetime</span></code></a> or <a class="reference external" href="https://docs.python.org/dev/library/datetime.html#datetime.date" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.date</span></code></a>, parse the string and return the
 <code class="docutils literal notranslate"><span class="pre">datetime</span></code> object.</p></li>
 <li><p>If <code class="docutils literal notranslate"><span class="pre">response_type</span></code> is <code class="docutils literal notranslate"><span class="pre">list</span></code>, recursively deserialize the list contents.</p></li>
 <li><p>If <code class="docutils literal notranslate"><span class="pre">response_type</span></code> is <code class="docutils literal notranslate"><span class="pre">dict</span></code>, recursively deserialize the dictionary keys and values.</p></li>
@@ -374,7 +374,7 @@
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
 </p>
     </div>
     
