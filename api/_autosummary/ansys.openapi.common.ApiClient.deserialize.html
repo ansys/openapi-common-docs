@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>deserialize &#8212; OpenAPI Common 1.1.0</title>
+    <title>deserialize &#8212; OpenAPI Common 1.1.1</title>
     
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
@@ -139,7 +139,7 @@
         <li class="nav-item nav-item-additional-breadcrumb"><a href="https://shared.docs.pyansys.com">Shared Components</a> » </li>
     
     
-        <li class="nav-item nav-item-0"><a href="../../index.html">OpenAPI Common 1.1.0</a> » </li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">OpenAPI Common 1.1.1</a> » </li>
     
 
           <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> » </li>
@@ -313,7 +313,7 @@
 <p>For responses that are in JSON format, this method processes the response and returns it:</p>
 <ul class="simple">
 <li><p>If <code class="docutils literal notranslate"><span class="pre">response_type</span></code> is <code class="docutils literal notranslate"><span class="pre">file</span></code>, save the content to a temporary file and return the file name.</p></li>
-<li><p>If <code class="docutils literal notranslate"><span class="pre">response_type</span></code> is <a class="reference external" href="https://docs.python.org/dev/library/datetime.html#datetime.datetime" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.datetime</span></code></a> or <a class="reference external" href="https://docs.python.org/dev/library/datetime.html#datetime.date" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.date</span></code></a>, parse the string and return the
+<li><p>If <code class="docutils literal notranslate"><span class="pre">response_type</span></code> is <a class="reference external" href="https://docs.python.org/dev/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.datetime</span></code></a> or <a class="reference external" href="https://docs.python.org/dev/library/datetime.html#datetime.date" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.date</span></code></a>, parse the string and return the
 <code class="docutils literal notranslate"><span class="pre">datetime</span></code> object.</p></li>
 <li><p>If <code class="docutils literal notranslate"><span class="pre">response_type</span></code> is <code class="docutils literal notranslate"><span class="pre">list</span></code>, recursively deserialize the list contents.</p></li>
 <li><p>If <code class="docutils literal notranslate"><span class="pre">response_type</span></code> is <code class="docutils literal notranslate"><span class="pre">dict</span></code>, recursively deserialize the dictionary keys and values.</p></li>
@@ -322,9 +322,9 @@
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl>
-<dt><strong>response</strong><span class="classifier"><a class="reference external" href="https://docs.python-requests.org/en/master/api/#requests.Response" title="(in Requests v2.26.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">requests.Response</span></code></a></span></dt><dd><p>Response object received from the API.</p>
+<dt><strong>response</strong><span class="classifier"><a class="reference external" href="https://requests.readthedocs.io/en/latest/api/#requests.Response" title="(in Requests v2.28.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">requests.Response</span></code></a></span></dt><dd><p>Response object received from the API.</p>
 </dd>
-<dt><strong>response_type</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>String name of the class represented.</p>
+<dt><strong>response_type</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>String name of the class represented.</p>
 </dd>
 </dl>
 </dd>
