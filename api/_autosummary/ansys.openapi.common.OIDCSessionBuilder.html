@@ -1,18 +1,23 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>OIDCSessionBuilder &#8212; OpenAPI Common 1.1.1</title>
+    <title>OIDCSessionBuilder &#8212; OpenAPI Common 1.2.0</title>
     
-    
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
 
-    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
   <link rel="stylesheet"
     href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
@@ -20,15 +25,12 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+    <link rel="stylesheet" type="text/css" href="../../_static/css/ansys_sphinx_theme.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
 
     
         <link href="../../_static/css/breadcrumbs.css" rel="stylesheet">
@@ -36,50 +38,51 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="authorize" href="ansys.openapi.common.OIDCSessionBuilder.authorize.html" />
     <link rel="prev" title="with_oidc" href="ansys.openapi.common.ApiClientFactory.with_oidc.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
 
     
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
-    .navbar-light {
-        background-color: black !important;
-    }
-</style>
-
-<div class="container-xl">
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
 
   <div id="navbar-start">
     
     
+  
 
-<a class="navbar-brand" href="https://docs.pyansys.com/">
-  <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    <img src="../../_static/pyansys-logo-black-cropped.png" class="logo__image only-light" alt="Logo image">
+    <img src="../../_static/pyansys-logo-black-cropped.png" class="logo__image only-dark" alt="Logo image">
+  
+  
 </a>
-
-
     
   </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" >
-      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-    </span>
+    <span class="fas fa-bars"></span>
   </button>
 
   
@@ -90,13 +93,13 @@
         <ul id="navbar-main-elements" class="navbar-nav">
     <li class="toctree-l1 current active nav-item">
  <a class="reference internal nav-link" href="../index.html">
-  API Reference
+  API reference
  </a>
 </li>
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../../contributing.html">
-  Contributing
+  Contribute
  </a>
 </li>
 
@@ -109,12 +112,18 @@
     <div id="navbar-end">
       
       <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/openapi-common" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+          <a class="nav-link" href="https://github.com/pyansys/openapi-common" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
         </li>
       </ul>
       </div>
@@ -139,10 +148,10 @@
         <li class="nav-item nav-item-additional-breadcrumb"><a href="https://shared.docs.pyansys.com">Shared Components</a> » </li>
     
     
-        <li class="nav-item nav-item-0"><a href="../../index.html">OpenAPI Common 1.1.1</a> » </li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">OpenAPI Common 1.2.0</a> » </li>
     
 
-          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">API Reference</a> » </li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">API reference</a> » </li>
         <li class="nav-item nav-item-this"><a href="">OIDCSessionBuilder</a></li> 
       </ul>
     </div>
@@ -152,12 +161,13 @@
     
 
 
-    <div class="container-xl">
-      <div class="row">
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
           
-            
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -236,47 +246,80 @@
   </a>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ansys.openapi.common._base.DeserializedType.html">
+   DeserializedType
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ansys.openapi.common._base.SerializedType.html">
+   SerializedType
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ansys.openapi.common._base.PrimitiveType.html">
+   PrimitiveType
+  </a>
+ </li>
+</ul>
 
     
   </div>
 </nav>
-            </div>
-            
-          
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
 
           
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
-            
-              
-              <div class="toc-item">
-                
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
-    
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ansys.openapi.common.OIDCSessionBuilder">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     OIDCSessionBuilder
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
 </nav>
-              </div>
-              
-              <div class="toc-item">
-                
-              </div>
-              
-            
-          </div>
-          
+    </div>
+    
+    <div class="toc-item">
+      
+    </div>
+    
+  
+</div>
+
 
           
           
-            
-          
-          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+          <div class="bd-content col-12 col-md-9 col-xl-7">
               
-              <div>
+              <article class="bd-article" role="main">
                 
   <section id="oidcsessionbuilder">
-<h1>OIDCSessionBuilder<a class="headerlink" href="#oidcsessionbuilder" title="Permalink to this headline">¶</a></h1>
+<h1>OIDCSessionBuilder<a class="headerlink" href="#oidcsessionbuilder" title="Permalink to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="ansys.openapi.common.OIDCSessionBuilder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OIDCSessionBuilder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_factory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_factory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.openapi.common.OIDCSessionBuilder" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OIDCSessionBuilder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_factory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_factory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.openapi.common.OIDCSessionBuilder" title="Permalink to this definition">#</a></dt>
 <dd><p>Helps create OpenID Connect sessions from different types of input and provides OIDC-specific
 configuration options.</p>
 <dl class="field-list">
@@ -303,7 +346,7 @@ configuration options.</p>
 <td><p>Use a token stored in the system keyring to authenticate the session.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="ansys.openapi.common.OIDCSessionBuilder.with_token.html#ansys.openapi.common.OIDCSessionBuilder.with_token" title="ansys.openapi.common.OIDCSessionBuilder.with_token"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OIDCSessionBuilder.with_token</span></code></a>(refresh_token)</p></td>
-<td><p>Use a provided access token or refresh token to authenticate the session.</p></td>
+<td><p>Use a provided refresh token to authenticate the session.</p></td>
 </tr>
 </tbody>
 </table>
@@ -312,32 +355,35 @@ configuration options.</p>
 </section>
 
 
-              </div>
+              </article>
               
-              
-          </main>
-          
 
+              
+          </div>
+          
       </div>
     </div>
+
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
-<footer class="footer mt-5 mt-md-0">
-  <div class="container">
-    
-    <div class="footer-item">
-      <p class="copyright">
-    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright (c) 2023 ANSYS, Inc. All rights reserved.<br>
 </p>
-    </div>
-    
-    <div class="footer-item">
-      <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
-</p>
-    </div>
-    
   </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
+</p>
+  </div>
+  
+</div>
 </footer>
   </body>
 </html>

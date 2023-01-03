@@ -1,18 +1,23 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>OpenAPI Common 1.1.1 &#8212; OpenAPI Common 1.1.1</title>
+    <title>OpenAPI-Common 1.2.0 &#8212; OpenAPI Common 1.2.0</title>
     
-    
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
 
-    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
   <link rel="stylesheet"
     href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
@@ -20,15 +25,12 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+    <link rel="stylesheet" type="text/css" href="_static/css/ansys_sphinx_theme.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
 
     
         <link href="_static/css/breadcrumbs.css" rel="stylesheet">
@@ -36,49 +38,50 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="API Reference" href="api/index.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+    <link rel="next" title="API reference" href="api/index.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
 
     
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
-    .navbar-light {
-        background-color: black !important;
-    }
-</style>
-
-<div class="container-xl">
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
 
   <div id="navbar-start">
     
     
+  
 
-<a class="navbar-brand" href="https://docs.pyansys.com/">
-  <img src="_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+    <img src="_static/pyansys-logo-black-cropped.png" class="logo__image only-light" alt="Logo image">
+    <img src="_static/pyansys-logo-black-cropped.png" class="logo__image only-dark" alt="Logo image">
+  
+  
 </a>
-
-
     
   </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" >
-      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-    </span>
+    <span class="fas fa-bars"></span>
   </button>
 
   
@@ -89,13 +92,13 @@
         <ul id="navbar-main-elements" class="navbar-nav">
     <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="api/index.html">
-  API Reference
+  API reference
  </a>
 </li>
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="contributing.html">
-  Contributing
+  Contribute
  </a>
 </li>
 
@@ -108,12 +111,18 @@
     <div id="navbar-end">
       
       <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/openapi-common" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+          <a class="nav-link" href="https://github.com/pyansys/openapi-common" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
         </li>
       </ul>
       </div>
@@ -139,7 +148,7 @@
     
     
 
-        <li class="nav-item nav-item-this"><a href="">OpenAPI Common 1.1.1</a></li> 
+        <li class="nav-item nav-item-this"><a href="">OpenAPI-Common 1.2.0</a></li> 
       </ul>
     </div>
         </div>
@@ -148,12 +157,13 @@
     
 
 
-    <div class="container-xl">
-      <div class="row">
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
           
-            
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -163,25 +173,29 @@
     
   </div>
 </nav>
-            </div>
-            
-          
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
 
           
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
-            
-              
-              <div class="toc-item">
-                
-<div class="tocsection onthispage pt-5 pb-3">
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction-and-purpose">
-   Introduction and Purpose
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -191,22 +205,22 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#brief-example">
-   Brief Example
+   Brief example
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#supported-authentication-schemes">
-   Supported Authentication Schemes
+  <a class="reference internal nav-link" href="#authentication-schemes">
+   Authentication schemes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#advanced-features">
-   Advanced Features
+   Advanced features
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#platform-specific-kerberos-configuration">
-     Platform-specific Kerberos Configuration
+     Platform-specific Kerberos configuration
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -220,61 +234,58 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#api-reference">
-   API Reference
+   API reference
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#contributing">
-   Contributing
+  <a class="reference internal nav-link" href="#contributions">
+   Contributions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#project-index">
-   Project Index
+   Project index
   </a>
  </li>
 </ul>
 
 </nav>
-              </div>
-              
-              <div class="toc-item">
-                
-              </div>
-              
-            
-          </div>
-          
+    </div>
+    
+    <div class="toc-item">
+      
+    </div>
+    
+  
+</div>
+
 
           
           
-            
-          
-          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+          <div class="bd-content col-12 col-md-9 col-xl-7">
               
-              <div>
+              <article class="bd-article" role="main">
                 
   <section id="openapi-common-version">
-<h1>OpenAPI Common 1.1.1<a class="headerlink" href="#openapi-common-version" title="Permalink to this headline">¶</a></h1>
+<h1>OpenAPI-Common 1.2.0<a class="headerlink" href="#openapi-common-version" title="Permalink to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<section id="introduction-and-purpose">
-<h2>Introduction and Purpose<a class="headerlink" href="#introduction-and-purpose" title="Permalink to this headline">¶</a></h2>
-<p>The OpenAPI Common library is part of the larger PyAnsys effort to
-facilitate the use of Ansys technologies directly from within Python.</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>OpenAPI-Common is part of the larger <a class="reference external" href="https://docs.pyansys.com">PyAnsys</a>
+effort to facilitate the use of Ansys technologies directly from Python.</p>
 <p>Because some Ansys products expose HTTP APIs rather than gRPC
-APIs, this library provides a common client to consume
+APIs, this Python library provides a common client to consume
 HTTP APIs, minimizing overhead and reducing code duplication.</p>
 </section>
 <section id="background">
-<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <p>A widely used standard for HTTP REST-style APIs is the OpenAPI standard,
-formerly known as Swagger. The OpenAPI Common library is designed to be
-used alongside code generation tools to produce client libraries for HTTP
-APIs.</p>
+formerly known as Swagger. OpenAPI-Common is designed to be used alongside
+code generation tools to produce client libraries for HTTP APIs.</p>
 </section>
 <section id="brief-example">
-<h2>Brief Example<a class="headerlink" href="#brief-example" title="Permalink to this headline">¶</a></h2>
+<h2>Brief example<a class="headerlink" href="#brief-example" title="Permalink to this heading">#</a></h2>
 <p>This brief example demonstrates how the client works:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.openapi.common</span> <span class="kn">import</span> <span class="n">ApiClientFactory</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">client</span> <span class="o">=</span> <span class="n">ApiClientFactory</span><span class="p">(</span><span class="s2">&quot;https://my-api.com&quot;</span><span class="p">)</span>
@@ -287,20 +298,20 @@ APIs.</p>
 </div>
 <p>The client is now ready and available for use with an OpenAPI client.</p>
 </section>
-<section id="supported-authentication-schemes">
-<h2>Supported Authentication Schemes<a class="headerlink" href="#supported-authentication-schemes" title="Permalink to this headline">¶</a></h2>
-<p>The OpenAPI Common library supports API servers configured with no authentication, API keys,
+<section id="authentication-schemes">
+<h2>Authentication schemes<a class="headerlink" href="#authentication-schemes" title="Permalink to this heading">#</a></h2>
+<p>OpenAPI-Common supports API servers configured with no authentication, API keys,
 client certificates, and basic authentication.</p>
 <p>Windows users can also use Windows Integrated Authentication to connect to Kerberos-enabled
 APIs with their Windows credentials and to NTLM where it is supported.</p>
 <p>Linux users can make use of Kerberos authentication via the <code class="docutils literal notranslate"><span class="pre">[linux-kerberos]</span></code> extra. This
-will require a working installation of either MIT Kerberos or Heimdal, as well as some
+requires a working installation of either MIT Kerberos or Heimdal, as well as some
 platform-specific build steps. An additional requirement is a correctly configured <code class="docutils literal notranslate"><span class="pre">krb5.keytab</span></code>
 file on your system.</p>
 <p>Windows and Linux users can authenticate with OIDC-enabled APIs by using the <code class="docutils literal notranslate"><span class="pre">[oidc]</span></code> extra.
-Currently we support only the Authorization Code authentication flow.</p>
+Currently only the Authorization Code authentication flow is supported.</p>
 <table class="colwidths-given table" id="id8">
-<caption><span class="caption-text">Authentication Methods by Platform</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Authentication methods by platform</span><a class="headerlink" href="#id8" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 30%" />
 <col style="width: 15%" />
@@ -308,7 +319,7 @@ Currently we support only the Authorization Code authentication flow.</p>
 <col style="width: 40%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Authentication Method</p></th>
+<tr class="row-odd"><th class="head"><p>Authentication method</p></th>
 <th class="head"><p>Windows</p></th>
 <th class="head"><p>Linux</p></th>
 <th class="head"><p>Builder method</p></th>
@@ -355,7 +366,7 @@ Currently we support only the Authorization Code authentication flow.</p>
 </dl>
 </section>
 <section id="advanced-features">
-<h2>Advanced Features<a class="headerlink" href="#advanced-features" title="Permalink to this headline">¶</a></h2>
+<h2>Advanced features<a class="headerlink" href="#advanced-features" title="Permalink to this heading">#</a></h2>
 <p>You can set all options that are available in Python library <em>requests</em> through
 the client. This enables you to configure custom SSL certificate validation, send
 client certificates if your API server requires them, and configure many other options.</p>
@@ -369,14 +380,14 @@ client certificates if your API server requires them, and configure many other o
 </pre></div>
 </div>
 <section id="platform-specific-kerberos-configuration">
-<h3>Platform-specific Kerberos Configuration<a class="headerlink" href="#platform-specific-kerberos-configuration" title="Permalink to this headline">¶</a></h3>
+<h3>Platform-specific Kerberos configuration<a class="headerlink" href="#platform-specific-kerberos-configuration" title="Permalink to this heading">#</a></h3>
 <p>Kerberos authentication should be supported wherever the MIT or Heimdal Kerberos client
-can be installed. The OpenAPI Common library has been tested on the platforms listed below.
+can be installed. OpenAPI-Common has been tested on the platforms that follow.
 If you manage to use it on another platform, consider contributing installation steps for
 your platform by making a pull request.</p>
 <section id="ubuntu-20-04">
-<h4>Ubuntu 20.04<a class="headerlink" href="#ubuntu-20-04" title="Permalink to this headline">¶</a></h4>
-<p>Ubuntu requires the Python module <code class="docutils literal notranslate"><span class="pre">gssapi</span></code> to be built from source. This requires the
+<h4>Ubuntu 20.04<a class="headerlink" href="#ubuntu-20-04" title="Permalink to this heading">#</a></h4>
+<p>Ubuntu requires the <code class="docutils literal notranslate"><span class="pre">gssapi</span></code> Python module to be built from source. This requires the
 Kerberos headers, Python headers for the version of Python that you are using, and a
 supported compiler. (GCC works well.)</p>
 <p>You should then be able to install this module with the <code class="docutils literal notranslate"><span class="pre">[linux-kerberos]</span></code> extra:</p>
@@ -385,22 +396,22 @@ pip install ansys-openapi-common<span class="o">[</span>linux-kerberos<span clas
 </pre></div>
 </div>
 <p>Once the installation completes, ensure that your <code class="docutils literal notranslate"><span class="pre">krb5.conf</span></code> file is set up correctly
-for your Kerberos configuration and that you have a valid <code class="docutils literal notranslate"><span class="pre">keytab</span> <span class="pre">file</span></code>, which is
+for your Kerberos configuration and that you have a valid <code class="docutils literal notranslate"><span class="pre">keytab</span></code> file, which is
 normally in <code class="docutils literal notranslate"><span class="pre">/etc/krb5.keytab</span></code>.</p>
 </section>
 </section>
 </section>
 <section id="api-reference">
-<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<h2>API reference<a class="headerlink" href="#api-reference" title="Permalink to this heading">#</a></h2>
 <p>For comprehensive API documentation, see <a class="reference internal" href="api/index.html"><span class="doc">API reference</span></a>.</p>
 </section>
-<section id="contributing">
-<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
-<p>We welcome contributions to this library. For more information, see
-<a class="reference internal" href="contributing.html"><span class="doc">Contributing</span></a>.</p>
+<section id="contributions">
+<h2>Contributions<a class="headerlink" href="#contributions" title="Permalink to this heading">#</a></h2>
+<p>Contributions to this library are welcome. For more information, see
+:ref: <cite>_contributing_openapi</cite>.</p>
 </section>
 <section id="project-index">
-<h2>Project Index<a class="headerlink" href="#project-index" title="Permalink to this headline">¶</a></h2>
+<h2>Project index<a class="headerlink" href="#project-index" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 </ul>
@@ -408,32 +419,35 @@ normally in <code class="docutils literal notranslate"><span class="pre">/etc/kr
 </section>
 
 
-              </div>
+              </article>
               
-              
-          </main>
-          
 
+              
+          </div>
+          
       </div>
     </div>
+
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
-<footer class="footer mt-5 mt-md-0">
-  <div class="container">
-    
-    <div class="footer-item">
-      <p class="copyright">
-    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright (c) 2023 ANSYS, Inc. All rights reserved.<br>
 </p>
-    </div>
-    
-    <div class="footer-item">
-      <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
-</p>
-    </div>
-    
   </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
+</p>
+  </div>
+  
+</div>
 </footer>
   </body>
 </html>
