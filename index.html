@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>OpenAPI-Common 1.3.0 &#8212; OpenAPI Common 1.3.0</title>
+    <title>OpenAPI-Common 1.4.0rc0 &#8212; OpenAPI Common 1.4.0rc0</title>
 
   
   
@@ -31,7 +31,7 @@
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/css/ansys_sphinx_theme.css?v=18fd1f76" />
+    <link rel="stylesheet" type="text/css" href="_static/css/ansys_sphinx_theme.css?v=450015ff" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -41,9 +41,9 @@
  
 <link href="_static/css/breadcrumbs.css" rel="stylesheet" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=9b2f005c"></script>
+    <script src="_static/documentation_options.js?v=3c1233c4"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=49e1bf35"></script>
     <script src="_static/js/table.js?v=b64f5182"></script>
@@ -371,11 +371,11 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="openapi-common-version">
-<h1>OpenAPI-Common 1.3.0<a class="headerlink" href="#openapi-common-version" title="Permalink to this heading">#</a></h1>
+<h1>OpenAPI-Common 1.4.0rc0<a class="headerlink" href="#openapi-common-version" title="Link to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>OpenAPI-Common is part of the larger <a class="reference external" href="https://docs.pyansys.com">PyAnsys</a>
 effort to facilitate the use of Ansys technologies directly from Python.</p>
 <p>Because some Ansys products expose HTTP APIs rather than gRPC
@@ -383,13 +383,13 @@ APIs, this Python library provides a common client to consume
 HTTP APIs, minimizing overhead and reducing code duplication.</p>
 </section>
 <section id="background">
-<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
 <p>A widely used standard for HTTP REST-style APIs is the OpenAPI standard,
 formerly known as Swagger. OpenAPI-Common is designed to be used alongside
 code generation tools to produce client libraries for HTTP APIs.</p>
 </section>
 <section id="brief-example">
-<h2>Brief example<a class="headerlink" href="#brief-example" title="Permalink to this heading">#</a></h2>
+<h2>Brief example<a class="headerlink" href="#brief-example" title="Link to this heading">#</a></h2>
 <p>This brief example demonstrates how the client works:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.openapi.common</span> <span class="kn">import</span> <span class="n">ApiClientFactory</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">client</span> <span class="o">=</span> <span class="n">ApiClientFactory</span><span class="p">(</span><span class="s2">&quot;https://my-api.com&quot;</span><span class="p">)</span>
@@ -403,7 +403,7 @@ code generation tools to produce client libraries for HTTP APIs.</p>
 <p>The client is now ready and available for use with an OpenAPI client.</p>
 </section>
 <section id="authentication-schemes">
-<h2>Authentication schemes<a class="headerlink" href="#authentication-schemes" title="Permalink to this heading">#</a></h2>
+<h2>Authentication schemes<a class="headerlink" href="#authentication-schemes" title="Link to this heading">#</a></h2>
 <p>OpenAPI-Common supports API servers configured with no authentication, API keys,
 client certificates, and basic authentication.</p>
 <p>Windows users can also use Windows Integrated Authentication to connect to Kerberos-enabled
@@ -415,7 +415,7 @@ file on your system.</p>
 <p>Windows and Linux users can authenticate with OIDC-enabled APIs by using the <code class="docutils literal notranslate"><span class="pre">[oidc]</span></code> extra.
 Currently only the Authorization Code authentication flow is supported.</p>
 <table class="table" id="id8">
-<caption><span class="caption-text">Authentication methods by platform</span><a class="headerlink" href="#id8" title="Permalink to this table">#</a></caption>
+<caption><span class="caption-text">Authentication methods by platform</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 30.0%" />
 <col style="width: 15.0%" />
@@ -474,7 +474,7 @@ Currently only the Authorization Code authentication flow is supported.</p>
 </aside>
 </section>
 <section id="advanced-features">
-<h2>Advanced features<a class="headerlink" href="#advanced-features" title="Permalink to this heading">#</a></h2>
+<h2>Advanced features<a class="headerlink" href="#advanced-features" title="Link to this heading">#</a></h2>
 <p>You can set all options that are available in Python library <em>requests</em> through
 the client. This enables you to configure custom SSL certificate validation, send
 client certificates if your API server requires them, and configure many other options.</p>
@@ -488,13 +488,13 @@ client certificates if your API server requires them, and configure many other o
 </pre></div>
 </div>
 <section id="platform-specific-kerberos-configuration">
-<h3>Platform-specific Kerberos configuration<a class="headerlink" href="#platform-specific-kerberos-configuration" title="Permalink to this heading">#</a></h3>
+<h3>Platform-specific Kerberos configuration<a class="headerlink" href="#platform-specific-kerberos-configuration" title="Link to this heading">#</a></h3>
 <p>Kerberos authentication should be supported wherever the MIT or Heimdal Kerberos client
 can be installed. OpenAPI-Common has been tested on the platforms that follow.
 If you manage to use it on another platform, consider contributing installation steps for
 your platform by making a pull request.</p>
 <section id="ubuntu-20-04">
-<h4>Ubuntu 20.04<a class="headerlink" href="#ubuntu-20-04" title="Permalink to this heading">#</a></h4>
+<h4>Ubuntu 20.04<a class="headerlink" href="#ubuntu-20-04" title="Link to this heading">#</a></h4>
 <p>Ubuntu requires the <code class="docutils literal notranslate"><span class="pre">gssapi</span></code> Python module to be built from source. This requires the
 Kerberos headers, Python headers for the version of Python that you are using, and a
 supported compiler. (GCC works well.)</p>
@@ -510,16 +510,16 @@ normally in <code class="docutils literal notranslate"><span class="pre">/etc/kr
 </section>
 </section>
 <section id="api-reference">
-<h2>API reference<a class="headerlink" href="#api-reference" title="Permalink to this heading">#</a></h2>
+<h2>API reference<a class="headerlink" href="#api-reference" title="Link to this heading">#</a></h2>
 <p>For comprehensive API documentation, see <a class="reference internal" href="api/index.html"><span class="doc">API reference</span></a>.</p>
 </section>
 <section id="contributions">
-<h2>Contributions<a class="headerlink" href="#contributions" title="Permalink to this heading">#</a></h2>
+<h2>Contributions<a class="headerlink" href="#contributions" title="Link to this heading">#</a></h2>
 <p>Contributions to this library are welcome. For more information, see
 <a class="reference internal" href="contributing.html#contributing-openapi"><span class="std std-ref">Contribute</span></a>.</p>
 </section>
 <section id="project-index">
-<h2>Project index<a class="headerlink" href="#project-index" title="Permalink to this heading">#</a></h2>
+<h2>Project index<a class="headerlink" href="#project-index" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 </ul>
@@ -597,7 +597,7 @@ normally in <code class="docutils literal notranslate"><span class="pre">/etc/kr
         <div class="footer-item">
   <p class="copyright">
     
-      © Copyright (c) 2023 ANSYS, Inc. All rights reserved.
+      © Copyright (c) 2024 ANSYS, Inc. All rights reserved.
       <br/>
     
   </p>
@@ -605,7 +605,7 @@ normally in <code class="docutils literal notranslate"><span class="pre">/etc/kr
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     <br/>
   </p>
 </div>
@@ -621,7 +621,7 @@ normally in <code class="docutils literal notranslate"><span class="pre">/etc/kr
   <a href="https://sphinxdocs.ansys.com/version/stable/index.html"
     >Ansys Sphinx Theme</a
   >
-  0.12.2. <br />Last updated on
+  0.12.5. <br />Last updated on
   <span id="date"></span>
 </p>
 <script>
