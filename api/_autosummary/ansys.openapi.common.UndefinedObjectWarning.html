@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>ApiException &#8212; OpenAPI Common 1.5.0rc1</title>
+    <title>UndefinedObjectWarning &#8212; OpenAPI Common 1.5.0rc1</title>
 
   
   
@@ -48,11 +48,11 @@
     <script src="../../_static/copybutton.js?v=49e1bf35"></script>
     <script src="../../_static/js/table.js?v=b64f5182"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'api/_autosummary/ansys.openapi.common.ApiException';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/_autosummary/ansys.openapi.common.UndefinedObjectWarning';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ApiConnectionException" href="ansys.openapi.common.ApiConnectionException.html" />
-    <link rel="prev" title="generate_user_agent" href="ansys.openapi.common.generate_user_agent.html" />
+    <link rel="next" title="DeserializedType" href="ansys.openapi.common._base.DeserializedType.html" />
+    <link rel="prev" title="AuthenticationWarning" href="ansys.openapi.common.AuthenticationWarning.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -337,10 +337,10 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="ansys.openapi.common.generate_user_agent.html">generate_user_agent</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">ApiException</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ansys.openapi.common.ApiException.html">ApiException</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ansys.openapi.common.ApiConnectionException.html">ApiConnectionException</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ansys.openapi.common.AuthenticationWarning.html">AuthenticationWarning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ansys.openapi.common.UndefinedObjectWarning.html">UndefinedObjectWarning</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">UndefinedObjectWarning</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="ansys.openapi.common._base.DeserializedType.html">DeserializedType</a></li>
@@ -397,7 +397,7 @@ document.write(`
       <a href="../index.html" class="nav-link">API reference</a>
     </li>
       
-    <li class="breadcrumb-item active" aria-current="page">ApiException</li>
+    <li class="breadcrumb-item active" aria-current="page">UndefinedObjectWarning</li>
     
   </ul>
 </nav>
@@ -415,27 +415,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="apiexception">
-<h1>ApiException<a class="headerlink" href="#apiexception" title="Link to this heading">#</a></h1>
+  <section id="undefinedobjectwarning">
+<h1>UndefinedObjectWarning<a class="headerlink" href="#undefinedobjectwarning" title="Link to this heading">#</a></h1>
 <dl class="py exception">
-<dt class="sig sig-object py" id="ansys.openapi.common.ApiException">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ApiException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status_code</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason_phrase</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.openapi.common.ApiException" title="Link to this definition">#</a></dt>
-<dd><p>Provides the exception to raise when the remote server returns an unsuccessful response.</p>
-<p>For more information about the failure, inspect <code class="docutils literal notranslate"><span class="pre">.status_code</span></code> and <code class="docutils literal notranslate"><span class="pre">.reason_phrase</span></code>.</p>
-<dl class="field-list">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>status_code</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a></span></dt><dd><p>HTTP status code associated with the response.</p>
-</dd>
-<dt><strong>reason_phrase</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>Description of the response provided by the server.</p>
-</dd>
-<dt><strong>body</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Content of the response provided by the server. The default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
-</dd>
-<dt><strong>headers</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CaseInsensitiveDict</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Response headers provided by the server. The default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
-</dd>
-</dl>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="ansys.openapi.common.UndefinedObjectWarning">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UndefinedObjectWarning</span></span><a class="headerlink" href="#ansys.openapi.common.UndefinedObjectWarning" title="Link to this definition">#</a></dt>
+<dd><p>Provides a warning for when a model is incompletely described in the OpenAPI definition.</p>
+<p>The data received from the server cannot be fully deserialized, and so the response is provided
+as an un-deserialized dictionary.</p>
+<p>This warning can be safely suppressed if the required detail cannot be added to the OpenAPI
+definition, but in this case the deserialization must be defined manually.</p>
 </dd></dl>
 
 </section>
@@ -460,7 +449,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ansys.openapi.common.ApiException"><code class="docutils literal notranslate"><span class="pre">ApiException</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ansys.openapi.common.UndefinedObjectWarning"><code class="docutils literal notranslate"><span class="pre">UndefinedObjectWarning</span></code></a></li>
 </ul>
   </nav></div>
 
@@ -471,7 +460,7 @@ document.write(`
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/api/_autosummary/ansys.openapi.common.ApiException.rst.txt">
+    <a href="../../_sources/api/_autosummary/ansys.openapi.common.UndefinedObjectWarning.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
